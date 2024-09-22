@@ -1,28 +1,29 @@
-###Virtual Classroom Manager
+# Virtual Classroom Manager
 
-#Project Overview
+## Project Overview
+The **Virtual Classroom Manager** is a terminal-based application designed to manage virtual classrooms. The system allows users to create classrooms, enroll students, schedule assignments, and manage submissions. The focus is on classroom management, with features such as tracking attendance and managing assignments.
 
-The Virtual Classroom Manager is a terminal-based application for managing virtual classrooms, handling class scheduling, student enrollments, and assignment submissions. The application supports multiple classrooms, students, and assignments with a simple command-based interaction system.
+## Features
+- **Classroom Management:** Create, list, and remove virtual classrooms.
+- **Student Management:** Enroll students into classrooms and list students in a class.
+- **Assignment Management:** Schedule assignments for classrooms and submit them.
 
-Features
-Classroom Management: Add, list, and remove classrooms.
-Student Management: Enroll students into classrooms and view the list of students in a particular class.
-Assignment Management: Schedule assignments for classrooms and submit them.
-Command-Line Interface: A simple CLI for managing classrooms, students, and assignments.
-Design Patterns
-Decorator Pattern: Used to dynamically add functionality for classrooms, students, and assignments.
-Command Pattern (Optional Extension): Could be added to handle different operations like adding a classroom, enrolling a student, or scheduling an assignment as commands.
-How to Run
-Compile the Java code:
-bash
-Copy code
-javac ClassroomManager.java
-Run the application:
-bash
-Copy code
-java ClassroomManager
-Key Components
-ClassroomManager: Manages all the virtual classrooms.
-Classroom: Represents a single virtual classroom.
-Student: Represents a student who can enroll in classrooms and submit assignments.
-Assignment: Represents an assignment scheduled for a classroom.
+## Design Patterns
+- **Decorator Pattern:** Used to dynamically add features such as managing classrooms, students, and assignments.
+- **Command Pattern (Optional):** Can be used to extend the functionality by handling commands like adding classrooms, enrolling students, etc.
+
+## How to Run
+1. Compile the Java code:
+    ```bash
+    javac ClassroomManager.java
+    ```
+2. Run the application:
+    ```bash
+    java ClassroomManager
+    ```
+
+## Key Components
+- **ClassroomManager:** Manages the creation and deletion of classrooms.
+- **Classroom:** Represents a single virtual classroom.
+- **Student:** Represents a student enrolled in a classroom.
+- **Assignment:** Represents an assignment scheduled for a classroom.
